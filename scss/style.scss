@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     // min-height: 100vh;
     position: relative;
+    overflow: hidden;
     .fullscreen{
         background: url(../images/Shape.png);
         display: flex;
@@ -70,12 +71,13 @@ body {
     .click-block {
         overflow: hidden;
         height: 66px;
-        background-color: rgba(37, 37, 37, 0.6);
+        // background-color: rgba(37, 37, 37, 0.6);
+        background: radial-gradient(circle, rgba(37, 37, 37, 0), rgba(43, 43, 43, 0.6));
         display: flex;
         // justify-content: space-around;
         bottom: 10px;
         position: absolute;
-        width: 100%;
+        width: 101.5%;
         z-index: 10;
         .download-links {
             display: flex;
