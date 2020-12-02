@@ -3,6 +3,10 @@ body {
   height: 100%;
 }
 
+.active_lang, .top-active_lang {
+  border-bottom: 2px solid #fff;
+}
+
 .top {
   display: -webkit-box;
   display: -webkit-flex;
@@ -31,14 +35,49 @@ body {
   background-image: url(../images/top.png);
 }
 
-.top .fullscreen .fullscreen-body .header-logo {
+.top .fullscreen .fullscreen-body .top-lang-and-logo {
   background-color: rgba(1, 1, 10, 0.6);
   text-align: center;
   height: 140px;
   width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.top .fullscreen .fullscreen-body .header-logo img {
+.top .fullscreen .fullscreen-body .top-lang-and-logo #top-lang-change {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: auto;
+}
+
+.top .fullscreen .fullscreen-body .top-lang-and-logo #top-lang-change li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.top .fullscreen .fullscreen-body .top-lang-and-logo #top-lang-change li:first-child:after {
+  content: "\23D0";
+  position: absolute;
+  height: 1px;
+  width: 5px;
+  color: #fff;
+  right: 27px;
+}
+
+.top .fullscreen .fullscreen-body .top-lang-and-logo #top-lang-change li:last-child {
+  margin-left: 10px;
+}
+
+.top .fullscreen .fullscreen-body .top-lang-and-logo .header-logo {
+  margin: 0 auto;
+}
+
+.top .fullscreen .fullscreen-body .top-lang-and-logo .header-logo img {
   height: 102px;
   width: 518px;
   margin-top: 18px;
@@ -179,6 +218,8 @@ body {
 }
 
 .content .content-body .content-body_block3 p {
+  margin: 0 auto;
+  margin-bottom: 16px;
   margin-top: 44px;
   font-size: 14px;
   font-style: normal;
@@ -211,7 +252,51 @@ footer .wrapper {
 }
 
 footer .wrapper .mobile-stores {
-  padding-left: 115px;
+  padding-left: 25px;
+}
+
+footer .wrapper .mobile-stores .icons-and-lang {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .wrapper .mobile-stores .icons-and-lang #social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 20px;
+  position: relative;
+}
+
+footer .wrapper .mobile-stores .icons-and-lang #social li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .wrapper .mobile-stores .icons-and-lang #social li:first-child:after {
+  content: "\23D0";
+  position: absolute;
+  height: 1px;
+  width: 5px;
+  color: #fff;
+  right: 30px;
+}
+
+footer .wrapper .mobile-stores .icons-and-lang #social li:last-child {
+  margin-left: 5px;
 }
 
 footer .wrapper .mobile-stores a {
@@ -236,7 +321,7 @@ footer .wrapper .social-links-footer {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-right: 115px;
+  padding-right: 45px;
 }
 
 footer .wrapper .social-links-footer a {
@@ -244,10 +329,13 @@ footer .wrapper .social-links-footer a {
 }
 
 @media screen and (max-width: 768px) {
-  .header-logo {
+  #top-lang-change {
+    display: none !important;
+  }
+  .top-lang-and-logo {
     height: 100px !important;
   }
-  .header-logo img {
+  .top-lang-and-logo .header-logo img {
     margin-top: 6px !important;
   }
   .header-imgs.container {
@@ -386,10 +474,10 @@ footer .wrapper .social-links-footer a {
   .click-block {
     display: none !important;
   }
-  .top .fullscreen .fullscreen-body .header-logo {
+  .top .fullscreen .fullscreen-body .top-lang-and-logo .header-logo {
     height: 80px;
   }
-  .top .fullscreen .fullscreen-body .header-logo img {
+  .top .fullscreen .fullscreen-body .top-lang-and-logo .header-logo img {
     height: 82px;
     width: 418px;
     margin-top: 8px !important;
@@ -397,17 +485,14 @@ footer .wrapper .social-links-footer a {
 }
 
 @media screen and (max-width: 420px) {
-  .header-logo img {
+  .top-lang-and-logo .header-logo img {
     height: 84px !important;
     width: 340px !important;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .header-logo {
-    height: 80px !important;
-  }
-  .header-logo img {
+  .top-lang-and-logo .header-logo img {
     height: 74px !important;
     width: 300px !important;
   }
