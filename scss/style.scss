@@ -27,24 +27,19 @@ body {
                 height: 140px;
                 width: 100%;
                 display: flex;
+                position: relative;
                 #top-lang-change{
                     display: flex;
-                    position: relative;
-                    margin: auto;
+                    position: absolute;
+                    top: 38%;
+                    left: 3%;
                     li{
                         a{
                             text-decoration: none;
                             color: #fff;
                         }
-                        // button{
-                        //     border: none;
-                        //     outline: none;
-                        //     background-color: transparent;
-                        //     color: #fff;
-                        // }
                     }
                     li:first-child{
-                        // margin-left: 30px;
                         &:after{
                             content: "\23D0";
                             position: absolute;
@@ -238,7 +233,7 @@ footer {
     background-color: #2C2F4A;
     .wrapper {
         line-height: 108px;
-        .mobile-stores {
+        .mobile-stores-and-lang {
             .icons-and-lang{
                 display: flex;
                 flex-direction: row;
@@ -295,7 +290,7 @@ footer {
     }
 }
 
-// --------------------------------------------------------------------------
+// -----------------------  MEDIA QUERY  ---------------------------------------------------
 
 @media screen and (max-width: 768px){
     #top-lang-change{
@@ -381,15 +376,32 @@ footer {
     .social-links{
         display: none !important;
     }
+
+    
+    .wrapper.row {
+        .mobile-stores-and-lang {
+            .icons-and-lang {
+                .mobile-stores {
+                    display: none !important;
+                }
+            }
+        }
+    }
     footer{
         .wrapper{
             line-height: 0;
             div{
                 text-align: center;
             }
-            .mobile-stores{
+            .mobile-stores-and-lang{
                 padding: 0;
-                display: none;
+                .icons-and-lang{
+                    position: relative;
+                    #social{
+                        position: absolute;
+                        top: 34px;
+                    }
+                }
             }
             div:nth-child(2){
                 margin-top: 30px;
@@ -404,14 +416,15 @@ footer {
 }
 
 @media screen and (max-width: 540px){
+    #social{
+        top: 70px !important;
+    }
     .links {
         .download-links-bottom {
             display: flex !important;
             flex-direction: column !important;
             a:nth-child(2) {
                 margin-top: 10px;
-                // img {
-                // }
             }
         }
     }
@@ -470,6 +483,10 @@ footer {
 }
 
 @media screen and (max-width: 420px){
+    // #social{
+    //     // position: absolute;
+    //     top: 70px !important;
+    // }
     .top-lang-and-logo{
         .header-logo{
             img{

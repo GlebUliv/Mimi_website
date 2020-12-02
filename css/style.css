@@ -44,6 +44,7 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .top .fullscreen .fullscreen-body .top-lang-and-logo #top-lang-change {
@@ -51,8 +52,9 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  margin: auto;
+  position: absolute;
+  top: 38%;
+  left: 3%;
 }
 
 .top .fullscreen .fullscreen-body .top-lang-and-logo #top-lang-change li a {
@@ -251,11 +253,11 @@ footer .wrapper {
   line-height: 108px;
 }
 
-footer .wrapper .mobile-stores {
+footer .wrapper .mobile-stores-and-lang {
   padding-left: 25px;
 }
 
-footer .wrapper .mobile-stores .icons-and-lang {
+footer .wrapper .mobile-stores-and-lang .icons-and-lang {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -267,7 +269,7 @@ footer .wrapper .mobile-stores .icons-and-lang {
           flex-direction: row;
 }
 
-footer .wrapper .mobile-stores .icons-and-lang #social {
+footer .wrapper .mobile-stores-and-lang .icons-and-lang #social {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -281,12 +283,12 @@ footer .wrapper .mobile-stores .icons-and-lang #social {
   position: relative;
 }
 
-footer .wrapper .mobile-stores .icons-and-lang #social li a {
+footer .wrapper .mobile-stores-and-lang .icons-and-lang #social li a {
   text-decoration: none;
   color: #fff;
 }
 
-footer .wrapper .mobile-stores .icons-and-lang #social li:first-child:after {
+footer .wrapper .mobile-stores-and-lang .icons-and-lang #social li:first-child:after {
   content: "\23D0";
   position: absolute;
   height: 1px;
@@ -295,11 +297,11 @@ footer .wrapper .mobile-stores .icons-and-lang #social li:first-child:after {
   right: 30px;
 }
 
-footer .wrapper .mobile-stores .icons-and-lang #social li:last-child {
+footer .wrapper .mobile-stores-and-lang .icons-and-lang #social li:last-child {
   margin-left: 5px;
 }
 
-footer .wrapper .mobile-stores a {
+footer .wrapper .mobile-stores-and-lang a {
   margin-left: 10px;
 }
 
@@ -403,15 +405,24 @@ footer .wrapper .social-links-footer a {
   .social-links {
     display: none !important;
   }
+  .wrapper.row .mobile-stores-and-lang .icons-and-lang .mobile-stores {
+    display: none !important;
+  }
   footer .wrapper {
     line-height: 0;
   }
   footer .wrapper div {
     text-align: center;
   }
-  footer .wrapper .mobile-stores {
+  footer .wrapper .mobile-stores-and-lang {
     padding: 0;
-    display: none;
+  }
+  footer .wrapper .mobile-stores-and-lang .icons-and-lang {
+    position: relative;
+  }
+  footer .wrapper .mobile-stores-and-lang .icons-and-lang #social {
+    position: absolute;
+    top: 34px;
   }
   footer .wrapper div:nth-child(2) {
     margin-top: 30px;
@@ -424,6 +435,9 @@ footer .wrapper .social-links-footer a {
 }
 
 @media screen and (max-width: 540px) {
+  #social {
+    top: 70px !important;
+  }
   .links .download-links-bottom {
     display: -webkit-box !important;
     display: -webkit-flex !important;
