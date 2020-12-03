@@ -37,6 +37,7 @@ body {
                         a{
                             text-decoration: none;
                             color: #fff;
+                            font-family: 'PT Sans', sans-serif;
                         }
                     }
                     li:first-child{
@@ -46,11 +47,11 @@ body {
                             height: 1px;
                             width: 5px;
                             color: #fff;
-                            right: 27px;
+                            right: 24px;
                         }
                     }
                     li:last-child{
-                        margin-left: 10px;
+                        margin-left: 12px;
                     }
                 }
                 .header-logo {
@@ -246,6 +247,7 @@ footer {
                         a{
                             text-decoration: none;
                             color: #fff;
+                            font-family: 'PT Sans', sans-serif;
                         }
                     }
                     li:first-child{
@@ -255,12 +257,12 @@ footer {
                             height: 1px;
                             width: 5px;
                             color: #fff;
-                            right: 30px;
+                            right: 24px;
                         }
                     }
-                    li:last-child{
-                        margin-left: 5px;
-                    }
+                    // li:last-child{
+                    //     margin-left: 5px;
+                    // }
                 }
             }
             padding-left: 25px;

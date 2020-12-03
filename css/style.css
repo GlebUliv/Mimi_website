@@ -60,6 +60,7 @@ body {
 .top .fullscreen .fullscreen-body .top-lang-and-logo #top-lang-change li a {
   text-decoration: none;
   color: #fff;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .top .fullscreen .fullscreen-body .top-lang-and-logo #top-lang-change li:first-child:after {
@@ -68,11 +69,11 @@ body {
   height: 1px;
   width: 5px;
   color: #fff;
-  right: 27px;
+  right: 24px;
 }
 
 .top .fullscreen .fullscreen-body .top-lang-and-logo #top-lang-change li:last-child {
-  margin-left: 10px;
+  margin-left: 12px;
 }
 
 .top .fullscreen .fullscreen-body .top-lang-and-logo .header-logo {
@@ -286,6 +287,7 @@ footer .wrapper .mobile-stores-and-lang .icons-and-lang #social {
 footer .wrapper .mobile-stores-and-lang .icons-and-lang #social li a {
   text-decoration: none;
   color: #fff;
+  font-family: 'PT Sans', sans-serif;
 }
 
 footer .wrapper .mobile-stores-and-lang .icons-and-lang #social li:first-child:after {
@@ -294,11 +296,7 @@ footer .wrapper .mobile-stores-and-lang .icons-and-lang #social li:first-child:a
   height: 1px;
   width: 5px;
   color: #fff;
-  right: 30px;
-}
-
-footer .wrapper .mobile-stores-and-lang .icons-and-lang #social li:last-child {
-  margin-left: 5px;
+  right: 24px;
 }
 
 footer .wrapper .mobile-stores-and-lang a {
