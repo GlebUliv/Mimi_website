@@ -138,8 +138,9 @@ body {
   display: flex;
   bottom: 10px;
   position: absolute;
-  width: 101.5%;
+  width: 100%;
   z-index: 10;
+  margin: 0;
 }
 
 .top .click-block .download-links {
@@ -194,7 +195,7 @@ body {
 }
 
 .content .content-body .content-body_block2 .row {
-  margin-top: 20px;
+  margin: 20px 0 0 0;
 }
 
 .content .content-body .content-body_block2 .row .content-logo {
@@ -206,7 +207,7 @@ body {
 }
 
 .content .content-body .content-body_block2 .row .content-imgs img {
-  padding: 0 15px;
+  margin: 0 15px;
 }
 
 .content .content-body .content-body_block2 .row p {

@@ -108,14 +108,13 @@ body {
     .click-block {
         overflow: hidden;
         height: 66px;
-        // background-color: rgba(37, 37, 37, 0.6);
         background: radial-gradient(circle, rgba(37, 37, 37, 0), rgba(43, 43, 43, 0.6));
         display: flex;
-        // justify-content: space-around;
         bottom: 10px;
         position: absolute;
-        width: 101.5%;
+        width: 100%;
         z-index: 10;
+        margin: 0;
         .download-links {
             display: flex;
             flex-direction: row;
@@ -167,14 +166,14 @@ body {
         }
         .content-body_block2 {
             .row {
-                margin-top: 20px;
+                margin: 20px 0 0 0;
                 .content-logo {
                     margin: 0 auto;
                 }
                 .content-imgs {
                     margin: 0 auto;
                     img {
-                        padding: 0 15px;
+                        margin: 0 15px;
                     }
                 }
                 p {
