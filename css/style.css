@@ -23,6 +23,8 @@ body {
 
 .top .fullscreen {
   background: url(../images/Shape.png);
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -175,7 +177,8 @@ body {
 }
 
 .content .content-body {
-  background: url(../images/content-bg.png) no-repeat;
+  background: url(../images/content-bg.png);
+  background-repeat: repeat;
 }
 
 .content .content-body .container {

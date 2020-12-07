@@ -15,6 +15,7 @@ body {
     overflow: hidden;
     .fullscreen{
         background: url(../images/Shape.png);
+        background-size: 100%;
         display: flex;
         // min-height: 100vh;
         overflow: hidden;
@@ -143,7 +144,8 @@ body {
 
 .content {
     .content-body {
-        background: url(../images/content-bg.png) no-repeat;
+        background: url(../images/content-bg.png);
+        background-repeat: repeat;
         .container {
             max-width: 900px !important;
         }
