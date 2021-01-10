@@ -58,8 +58,8 @@ body {
                 .header-logo {
                     margin: 0 auto;
                     img{
-                        height: 102px;
-                        width: 518px;
+                        max-height: 102px;
+                        max-width: 518px;
                         margin-top: 18px;
                     }
                 }
@@ -71,35 +71,56 @@ body {
                 position: relative;
                 // margin: 0 auto;
                 text-align: center;
-                .image{
-                    height: 100%;
+                .header-imgs-wrapper{
                     width: 100%;
-                    position: absolute;
-                    z-index: 1;
-                }
-                // .co {
-                //     // background: url(../images/Image1.png) no-repeat;
-                //     // width: 700px;
-                // }
-                .girl {
-                    top: 175px;
-                    z-index: 8;
-                    right: 10px;
-                }
-                .book {
-                    top: 290px;
-                    z-index: 9;
-                    left: 50px;
-                }
-                .clouds {
-                    top: 305px;
-                    left: 100px;
-                    z-index: 7;
-                }
-                .mouse {
-                    top: 315px;
-                    right: 25px;
-                    z-index: 10;
+                    .image{
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        z-index: 1;
+                    }
+                    .co {
+                        img{
+                            max-width: 712px;
+                            height: auto;
+                        }
+                    }
+                    .girl {
+                        top: 175px;
+                        z-index: 8;
+                        right: 10px;
+                        img{
+                            max-width: 306px;
+                            height: auto;
+                        }
+                    }
+                    .book {
+                        top: 290px;
+                        z-index: 9;
+                        left: 50px;
+                        img{
+                            max-width: 380px;
+                            height: auto;
+                        }
+                    }
+                    .clouds {
+                        top: 305px;
+                        left: 100px;
+                        z-index: 7;
+                        img{
+                            max-width: 620px;
+                            height: auto;
+                        }
+                    }
+                    .mouse {
+                        top: 315px;
+                        right: 25px;
+                        z-index: 10;
+                        img{
+                            max-width: 800px;
+                            height: auto;
+                        }
+                    }
                 }
             }
         }
@@ -121,8 +142,10 @@ body {
             padding: 10px;
             a {
                 padding: 0 0 0 20px;
-                // img {
-                // }
+                img {
+                    max-width: 156px;
+                    height: auto;
+                }
             }
         }
         .social-links {
@@ -133,8 +156,10 @@ body {
             width: 100%;
             a {
                 padding: 0 5px;
-                // img {
-                // }
+                img {
+                    max-width: 22px;
+                    max-height: 22px;
+                }
             }
         }
     }
@@ -157,23 +182,37 @@ body {
     .content-body {
         .content-body_block1 {
             margin-top: 24px;
-            // .row {
-            //     div {
-            //         img {
-            //         }
-            //     }
-            // }
+            .row {
+                div {
+                    width: 100%;
+                    img {
+                        max-width: 400px;
+                        max-height: 185px;
+                    }
+                }
+            }
         }
         .content-body_block2 {
             .row {
                 margin: 20px 0 0 0;
                 .content-logo {
                     margin: 0 auto;
+                    // width: 100%;
+                    img{
+                        max-width: 289px;
+                        max-height: 57px;
+                    }
                 }
                 .content-imgs {
                     margin: 0 auto;
+                    .content-imgs__central-img{
+                        max-width: 124px;
+                        max-height: 124px;
+                    }
                     img {
                         margin: 0 15px;
+                        max-width: 80px;
+                        max-height: 80px;
                     }
                 }
                 p {
@@ -191,12 +230,15 @@ body {
             }
         }
         .content-body_block3 {
-            // .row {
-            //     div {
-            //         img {
-            //         }
-            //     }
-            // }
+            .row {
+                div {
+                    width: 100%;
+                    img {
+                        max-width: 400px;
+                        max-height: 185px;
+                    }
+                }
+            }
             p{
                 margin: 0 auto;
                 margin-bottom: 16px;
@@ -222,6 +264,8 @@ body {
         a {
             img {
                 padding: 0 15px;
+                max-width: 213px;
+                height: auto;
             }
         }
     }
@@ -239,6 +283,14 @@ footer {
             .icons-and-lang{
                 display: flex;
                 flex-direction: row;
+                .mobile-stores{
+                    a{
+                        img{
+                            max-width: 26px;
+                            max-height: 21px;
+                        }
+                    }
+                }
                 #social{
                     display: flex;
                     flex-direction: row;
@@ -288,6 +340,10 @@ footer {
             padding-right: 45px;
             a {
                 margin-left: 10px;
+                img{
+                    max-width: 22px;
+                    max-height: 22px;
+                }
             }
         }
     }
@@ -331,6 +387,7 @@ footer {
         }
         .clouds {
             top: 200px !important;
+            left: 30px !important;
             // img {
             // }
         }
@@ -368,10 +425,11 @@ footer {
         .download-links{
             display: flex;
             justify-content: space-around;
+            padding: 15px !important;
             a{
                 img{
                     width: 80%;
-                    height: 100%;
+                    height: auto;
                 }
             }
         }
@@ -419,6 +477,10 @@ footer {
 }
 
 @media screen and (max-width: 540px){
+    .content-imgs__central-img{
+        max-width: 80px !important;
+        max-height: 80px !important;
+    }
     #social{
         top: 70px !important;
     }
@@ -434,7 +496,7 @@ footer {
     .header-imgs.container {
         height: 270px !important;
         .co{
-            top: 45px;
+            top: 75px;
             img {
                 width: 80%;
             }
@@ -455,6 +517,7 @@ footer {
         }
         .clouds {
             top: 200px !important;
+            // left: -20px !important;
             // img {
             // }
         }
@@ -486,15 +549,19 @@ footer {
 }
 
 @media screen and (max-width: 420px){
-    // #social{
-    //     // position: absolute;
-    //     top: 70px !important;
-    // }
+    .links{
+        padding: 15px 0 !important;
+    }
+    .links .download-links-bottom a img {
+        max-width: 170px !important;
+    }
     .top-lang-and-logo{
+        height: 70px !important;
         .header-logo{
+            height: 100%;
             img{
-                height: 84px !important;
-                width: 340px !important;
+                height: 64px !important;
+                width: 280px !important;
             }
         }
     }
